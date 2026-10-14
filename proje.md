@@ -56,7 +56,7 @@ Ana ölçüt Macro-F1'dir; N sınıfı baskın olduğu için genel doğruluk tek
 | F | 16 | 0 | 0 |
 | Q | 2.067 | 0,2478 | 0,7957 |
 
-Macro-F1 0,1218 arttı, genel doğruluk 1,86 yüzde puan düştü. S sınıfının duyarlılığı %34,87, kesinliği yalnız %6,63'tür. F sınıfı tanınmadı. Q sınıfı pacing ve sınıflandırılamayan atımları da içeren bir gruptur; Q artışı tek bir aritmi için klinik başarı anlamına gelmez. Tüm ayrıntılar `artifacts/comparison_improved.json` içindedir.
+Macro-F1 0,1218 arttı, genel doğruluk 1,86 yüzde puan düştü. S sınıfının duyarlılığı %34,87, kesinliği yalnız %6,63'tür. F sınıfı tanınmadı. Q sınıfı pacing ve sınıflandırılamayan atımları da içeren bir gruptur; Q artışı tek bir aritmi için klinik başarı anlamına gelmez. Tüm ayrıntılar teslim ZIP'indeki `biomed_project/artifacts/comparison_improved.json` ve [GitHub'daki karşılaştırma dosyasında](https://github.com/eminylmz7140/eem4011-ekg-aritmi/blob/main/comparison_improved.json) bulunur.
 
 ## Şekiller
 
@@ -75,7 +75,7 @@ Bir sonraki deneyde S ve F sınıflarındaki yanlış tahminler kişi bazında i
 | Veri ve ilk kod | 48 kayıt indirildi; sekiz aşama çalıştı | Kaynak bağlantısını formda belirtmek |
 | İlk sonuç ve şekil | Metrikler doğrulandı; iki grafik üretildi | Öğrencinin kendi sözleriyle üç cümlelik yorum yazması |
 | Literatür ve gap | Üç yayıncı bağlantısı incelendi; genel gap iddiası daraltıldı | Hocaya sunulacak son proje sorusunu formdaki önceki cevaplarla eşlemek |
-| Kod paylaşımı | Yerel proje hazır | GitHub deposu/bağlantısı henüz doğrulanmadı |
+| Kod paylaşımı | [GitHub deposuna](https://github.com/eminylmz7140/eem4011-ekg-aritmi) kod, rapor, grafikler ve tam teslim ZIP'i yüklendi; 26 dosya listesi doğrulandı | ZIP içindeki klasör yapısını koruyarak indirme ve çalıştırma |
 | Form | Bu belgeden kopyalanabilecek gerçek bilgiler hazır | Kişisel alanlar, sohbet paylaşım bağlantısı ve gönderim öğrencice tamamlanmalı |
 
 Paylaşılan ders takvimi geçerliyse 14–18 Ekim arasında şekil ve ilk sonucu Aşama 2 formuna koyup kendi üç cümleni yaz; 19–25 Ekim arasında S/F hata örneklerini incele ve yöntem sınırlarını gözden geçir; 26 Ekim–1 Kasım arasında son sonuç, CV cümlesi ve başvuru paketini öğretmenin Aşama 3 yönergesine göre tamamla. Bu gelecek adımlar yapılmış deney gibi raporlanmamalıdır.
@@ -109,5 +109,5 @@ Paylaşılan ders takvimi geçerliyse 14–18 Ekim arasında şekil ve ilk sonuc
 
 - Aşama 1'de istenen belirli gündem olayı ve tarihli kaynak.
 - Science AI Journal'dan indirilen özgün CSV, RIS ve öneri dosyalarının saklanması; mevcut sayfa metinleri bu dosyaların yerini tutmaz.
-- Kişisel Google formunun son gönderim durumu, sohbetin paylaşım bağlantısı ve GitHub URL'si.
+- Kişisel Google formunun son gönderim durumu ve sohbetin paylaşım bağlantısı. GitHub URL'si doğrulandı: https://github.com/eminylmz7140/eem4011-ekg-aritmi.
 - Google Colab'da bu tam akışın ayrıca çalıştırıldığının kanıtı. Yerel bilgisayarda tam çalıştırma doğrulandı.
