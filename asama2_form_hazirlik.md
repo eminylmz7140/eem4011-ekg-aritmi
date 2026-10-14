@@ -12,7 +12,7 @@ Bu sayfa, sohbette görülen form alanlarına karşılık gelir. Formun şıklar
 | İlk iyileştirmeden sonraki değer | **0,4261**. Dalga şekli ve RR özellikli kNN'nin aynı test bölümündeki Macro-F1 sonucu. |
 | Genel doğruluk sorulursa | Önce **%76,37**, sonra **%74,50**. İyileşme iddiasını genel doğruluk için kullanma. |
 | Şekil | `ekg_kayit100.png` gerçek EKG'nin ilk 8 saniyesini ve hazır anotasyonları gösterir. `sinif_f1_karsilastirma.png` aynı testteki beş sınıfın önce/sonra F1 değerlerini gösterir. |
-| GitHub bağlantısı | **Henüz yok**. GitHub oturumu açılmadan URL uydurma. |
+| GitHub bağlantısı | **https://github.com/eminylmz7140/eem4011-ekg-aritmi**. Depo açıldı; 26 dosya ve son belge güncellemesi GitHub üzerinde kontrol edildi. |
 | Sohbet paylaşım bağlantısı | **Henüz doğrulanmadı**. Uygulamanın Paylaş düğmesinden gerçek bağlantıyı al. |
 | “Kendi cümlelerinle 3 cümle” | Öğrencinin kendi sözleriyle doldurulmalı. İpuçları: kodun okuduğu veri; baseline sayısının kaynağı; seçtiğin şeklin gösterdiği şey. |
 
