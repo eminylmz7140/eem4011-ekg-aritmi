@@ -1,5 +1,7 @@
 # EEM4011 bireysel proje: EKG atımlarının hasta bazlı kNN sınıflandırması
 
+> **Aşama 2 uyarısı (14 Ekim 2026):** Ders duyurusuna göre makine öğrenmesi vizeden sonraya bırakılmalıdır. Bu belgedeki kNN deneyi vize sonrası geliştirme içindir; Aşama 2 formuna aktarılmamalıdır. Güncel Aşama 2 çalışması ve gerçek sayıları için [`asama2_ekg_sinyal_isleme.md`](asama2_ekg_sinyal_isleme.md) ile [`asama2_form_hazirlik.md`](asama2_form_hazirlik.md) belgelerini kullanın.
+
 Öğrenci: Yıldıray Yılmaz  
 Durum: 48 kayıtla çalışan ders projesi; bağımsız dış doğrulama yapılmadı.  
 Son güncelleme: 14 Ekim 2026.

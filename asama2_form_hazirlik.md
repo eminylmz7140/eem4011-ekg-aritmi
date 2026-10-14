@@ -1,25 +1,26 @@
-# EEM4011 Aşama 2 formu için doğrulanmış bilgiler
+# EEM4011 Aşama 2 formu: gerçek sinyal işleme sonuçları
 
-Bu sayfa, sohbette görülen form alanlarına karşılık gelir. Formun şıkları veya sırası değişirse ekrandaki gerçek ifadeyi esas alın. Gönderim yapılmadı.
+Bu not yalnız gerçekten çalıştırılan **makine öğrenmesiz R-tepe tespiti** deneyini kapsar. Form gönderilmedi. Formda görünen şıkları ve alanların birimlerini esas al.
 
-| Görülen alan | Girilecek gerçek bilgi |
+| Form alanı | Doğrulanmış yanıt |
 |---|---|
-| Seçilen proje | “Kendi konumu seçtim (Aşama 1 formunda yazdım)” **yalnız Aşama 1'de gerçekten bu konu yazıldıysa**. Aksi hâlde formun menü/konu tutarsızlığı çözülmeden gönderme. |
-| Veri setini indirip koda yükledin mi? | Evet. MIT-BIH verisinin 48 kaydı bu bilgisayarda indirildi ve işlendi. |
-| Kaç kayıt / görüntü / kişi kullandın? | Form hangi birimi istiyorsa: **48 kayıt**, **47 kişi**, **109468 geçerli atım**. Tek kutu yalnız sayı istiyorsa projede saydığın birimi hocanın alan tarifine göre seç. |
-| Ana metrik | **Macro-F1**. Sınıflar dengesiz olduğu için ana ölçüt olarak kullanıldı. |
-| Baseline değeri | **0,3043**. Altı özellikli kNN'nin Macro-F1 sonucu. |
-| İlk iyileştirmeden sonraki değer | **0,4261**. Dalga şekli ve RR özellikli kNN'nin aynı test bölümündeki Macro-F1 sonucu. |
-| Genel doğruluk sorulursa | Önce **%76,37**, sonra **%74,50**. İyileşme iddiasını genel doğruluk için kullanma. |
-| Şekil | `ekg_kayit100.png` gerçek EKG'nin ilk 8 saniyesini ve hazır anotasyonları gösterir. `sinif_f1_karsilastirma.png` aynı testteki beş sınıfın önce/sonra F1 değerlerini gösterir. |
-| GitHub bağlantısı | **https://github.com/eminylmz7140/eem4011-ekg-aritmi**. Depo açıldı; 26 dosya ve son belge güncellemesi GitHub üzerinde kontrol edildi. |
-| Sohbet paylaşım bağlantısı | **Henüz doğrulanmadı**. Uygulamanın Paylaş düğmesinden gerçek bağlantıyı al. |
-| “Kendi cümlelerinle 3 cümle” | Öğrencinin kendi sözleriyle doldurulmalı. İpuçları: kodun okuduğu veri; baseline sayısının kaynağı; seçtiğin şeklin gösterdiği şey. |
+| Seçilen proje | “Kendi konumu seçtim (Aşama 1 formunda yazdım)” **yalnız Aşama 1'de gerçekten bu konu yazıldıysa**. Önceki formda farklı konu varsa uyumunu hocaya göre düzelt. |
+| Veri setini indirip koda yükledin mi? | Evet. MIT-BIH veri kümesinin 48 kaydı bu bilgisayarda indirildi ve işlendi. |
+| Kaç kayıt / görüntü / kişi kullandın? | **48 kayıt**; veri kümesinde **47 kişi** ve değerlendirmede **109494 referans atım** vardır. Formun istediği birime göre sayı gir. |
+| Ana metrik | **F1 skoru** (R tepesi tespitinde, 150 ms eşleştirme toleransı). |
+| Baseline değeri | **0,8306** (ham eşik, tüm atımların birleştirilmiş F1'i). |
+| İlk iyileştirmeden sonraki değer | **0,9805** (5–15 Hz filtre + enerji zarfı; tüm atımların birleştirilmiş F1'i). |
+| Şekil | `rpeak_kayit100.png`: kayıt 100'ün ilk 10 saniyesinde EKG, referans, ham ve filtreli tepe konumları. |
+| GitHub bağlantısı | https://github.com/eminylmz7140/eem4011-ekg-aritmi |
+| Sohbet paylaşım bağlantısı | Henüz doğrulanmadı; uygulamanın **Paylaş** düğmesinden gerçek bağlantıyı al. |
+| “Kendi cümlelerinle 3 cümle” | Öğrencinin kendi sözleriyle yazılmalı. Veri, ilk sayı ve şeklin ne gösterdiği anlatılmalı. |
 
-## Aşama 1'deki gap sorusu
+**Aşama 2'de kNN'nin 0,3043 → 0,4261 Macro-F1 sonuçlarını kullanma.** Makine öğrenmesi vize sonrası çalışma olarak ayrıldı. R-tepe sonuçlarının ayrıntıları [`asama2_ekg_sinyal_isleme.md`](asama2_ekg_sinyal_isleme.md) belgesinde.
 
-20. soru hâlâ bu formda görünüyorsa, genel “henüz hiç çalışılmamış” iddiası doğrulanmadığı için **“Kısmen: bir kısmı çalışılmış”** daha savunulabilir. [Qin ve ark.](https://doi.org/10.1038/s41598-017-06596-z) kayıt bazlı, [Zhang ve ark.](https://doi.org/10.1155/2021/9946596) hastalar arası değerlendirme yaptı. Mevcut deney derin öğrenme karşılaştırması değildir.
+## Aşama 1'deki araştırma açığı sorusu
 
-## AI kullanımı ve doğrulama
+Genel “henüz hiç çalışılmamış” iddiası doğrulanmadığı için 20. soruda **“Kısmen: bir kısmı çalışılmış”** savunulabilir. Bu çalışmanın iddiası yeni yöntem keşfi değil, iki klasik sinyal işleme yaklaşımını aynı veride karşılaştırmaktır.
 
-Kullanılan araçları ve gerçekten yaptığın kontrolleri `proje.md` dosyasındaki AI günlüğüne göre yaz. Formda kendi değerlendirmene ait bir puan veya serbest yanıt isteniyorsa bunu sen doldur. Yanıtları göndermeden önce kodun gerçek çıktılarını ve şekilleri bir kez açıp incele.
+## AI beyanı ve kişisel alanlar
+
+Kullanılan aracı, sorulan istekleri ve gerçekten yapılan kontrolleri dürüstçe belirt. “Kendi cümlelerinle 3 cümle”, serbest değerlendirme, sohbet linki ve form gönderimi öğrenci tarafından tamamlanmalıdır. Sonuçlar [`phase2_results.json`](https://github.com/eminylmz7140/eem4011-ekg-aritmi/blob/main/phase2_results.json) dosyasındaki sayılardan kontrol edilmelidir.
