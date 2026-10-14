@@ -1,0 +1,423 @@
+{
+  "selected_model": "shape_rr_knn7_cap5000",
+  "validation": [
+    {
+      "name": "original_6_features",
+      "scores": [
+        0.2944365272833147,
+        0.3238632957234738
+      ],
+      "mean_macro_f1": 0.3091499115033942
+    },
+    {
+      "name": "shape_rr_knn5",
+      "scores": [
+        0.44592958736409705,
+        0.45229805008417523
+      ],
+      "mean_macro_f1": 0.44911381872413614
+    },
+    {
+      "name": "shape_rr_knn5_cap2000",
+      "scores": [
+        0.4727187196658885,
+        0.49698491626216346
+      ],
+      "mean_macro_f1": 0.484851817964026
+    },
+    {
+      "name": "shape_rr_knn7_cap5000",
+      "scores": [
+        0.48435920459491566,
+        0.5097565895418629
+      ],
+      "mean_macro_f1": 0.49705789706838927
+    }
+  ],
+  "majority_label": "N",
+  "majority_baseline": {
+    "accuracy": 0.8474626361563793,
+    "macro_f1": 0.18348682556731186,
+    "classification_report": {
+      "N": {
+        "precision": 0.8474626361563793,
+        "recall": 1.0,
+        "f1-score": 0.9174341278365593,
+        "support": 20073.0
+      },
+      "S": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 519.0
+      },
+      "V": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 1011.0
+      },
+      "F": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 16.0
+      },
+      "Q": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 2067.0
+      },
+      "accuracy": 0.8474626361563793,
+      "macro avg": {
+        "precision": 0.16949252723127586,
+        "recall": 0.2,
+        "f1-score": 0.18348682556731186,
+        "support": 23686.0
+      },
+      "weighted avg": {
+        "precision": 0.7181929196811198,
+        "recall": 0.8474626361563793,
+        "f1-score": 0.7774911444761993,
+        "support": 23686.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        20073,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        519,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1011,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        16,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2067,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "baseline_sha256": "81bf899dec96c949ef88134f15712a23ca6ffcb2a6887bb1a9dfb1becf611eb1",
+  "validation_splits": [
+    {
+      "fit_groups": [
+        "100",
+        "101",
+        "102",
+        "103",
+        "105",
+        "106",
+        "107",
+        "108",
+        "111",
+        "112",
+        "115",
+        "116",
+        "117",
+        "118",
+        "119",
+        "122",
+        "123",
+        "124",
+        "200",
+        "209",
+        "210",
+        "213",
+        "214",
+        "221",
+        "223",
+        "232",
+        "233"
+      ],
+      "validation_groups": [
+        "109",
+        "114",
+        "208",
+        "212",
+        "215",
+        "217",
+        "220",
+        "228",
+        "230",
+        "234"
+      ],
+      "validation_support": {
+        "N": 20677,
+        "S": 164,
+        "V": 1765,
+        "F": 379,
+        "Q": 1804
+      }
+    },
+    {
+      "fit_groups": [
+        "100",
+        "101",
+        "102",
+        "103",
+        "105",
+        "106",
+        "107",
+        "108",
+        "109",
+        "112",
+        "114",
+        "117",
+        "118",
+        "119",
+        "122",
+        "124",
+        "200",
+        "208",
+        "209",
+        "210",
+        "212",
+        "215",
+        "220",
+        "228",
+        "230",
+        "232",
+        "234"
+      ],
+      "validation_groups": [
+        "111",
+        "115",
+        "116",
+        "123",
+        "213",
+        "214",
+        "217",
+        "221",
+        "223",
+        "233"
+      ],
+      "validation_support": {
+        "N": 19081,
+        "S": 109,
+        "V": 2450,
+        "F": 388,
+        "Q": 1804
+      }
+    }
+  ],
+  "original": {
+    "accuracy": 0.7636578569619185,
+    "macro_f1": 0.30426167808999655,
+    "classification_report": {
+      "N": {
+        "precision": 0.8795660036166365,
+        "recall": 0.8481044188711204,
+        "f1-score": 0.8635487470832911,
+        "support": 20073.0
+      },
+      "S": {
+        "precision": 0.02119700748129676,
+        "recall": 0.03275529865125241,
+        "f1-score": 0.025738077214231644,
+        "support": 519.0
+      },
+      "V": {
+        "precision": 0.27242662257131045,
+        "recall": 0.6518298714144412,
+        "f1-score": 0.38425655976676387,
+        "support": 1011.0
+      },
+      "F": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 16.0
+      },
+      "Q": {
+        "precision": 0.3643192488262911,
+        "recall": 0.1877116594097726,
+        "f1-score": 0.24776500638569604,
+        "support": 2067.0
+      },
+      "accuracy": 0.7636578569619185,
+      "macro avg": {
+        "precision": 0.3075017764991069,
+        "recall": 0.3440802496693173,
+        "f1-score": 0.30426167808999655,
+        "support": 23686.0
+      },
+      "weighted avg": {
+        "precision": 0.7892848450655693,
+        "recall": 0.7636578569619185,
+        "f1-score": 0.7704122989276586,
+        "support": 23686.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        17024,
+        750,
+        1639,
+        43,
+        617
+      ],
+      [
+        367,
+        17,
+        109,
+        0,
+        26
+      ],
+      [
+        318,
+        0,
+        659,
+        1,
+        33
+      ],
+      [
+        14,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        1632,
+        35,
+        11,
+        1,
+        388
+      ]
+    ]
+  },
+  "improved": {
+    "accuracy": 0.745039263700076,
+    "macro_f1": 0.426063646017417,
+    "classification_report": {
+      "N": {
+        "precision": 0.9645886889460155,
+        "recall": 0.7477208190106113,
+        "f1-score": 0.8424213509948643,
+        "support": 20073.0
+      },
+      "S": {
+        "precision": 0.06627608934456243,
+        "recall": 0.348747591522158,
+        "f1-score": 0.11138461538461539,
+        "support": 519.0
+      },
+      "V": {
+        "precision": 0.2546728971962617,
+        "recall": 0.7546983184965381,
+        "f1-score": 0.38083354130272024,
+        "support": 1011.0
+      },
+      "F": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 16.0
+      },
+      "Q": {
+        "precision": 0.7731629392971247,
+        "recall": 0.8195452346395743,
+        "f1-score": 0.7956787224048849,
+        "support": 2067.0
+      },
+      "accuracy": 0.745039263700076,
+      "macro avg": {
+        "precision": 0.41174012295679285,
+        "recall": 0.5341423927337764,
+        "f1-score": 0.426063646017417,
+        "support": 23686.0
+      },
+      "weighted avg": {
+        "precision": 0.8972468182967058,
+        "recall": 0.745039263700076,
+        "f1-score": 0.8020528169962203,
+        "support": 23686.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        15009,
+        2472,
+        1984,
+        207,
+        401
+      ],
+      [
+        82,
+        181,
+        242,
+        1,
+        13
+      ],
+      [
+        100,
+        65,
+        763,
+        0,
+        83
+      ],
+      [
+        14,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        355,
+        13,
+        5,
+        0,
+        1694
+      ]
+    ]
+  },
+  "train_available": 85782,
+  "train_used": 18048,
+  "test_beats": 23686,
+  "feature_count": 36,
+  "test_records": [
+    "104",
+    "113",
+    "121",
+    "201",
+    "202",
+    "203",
+    "205",
+    "207",
+    "219",
+    "222",
+    "231"
+  ],
+  "limitations": [
+    "Previously reported holdout reused for comparison; external validation still needed.",
+    "Reference beat locations supplied; this does not evaluate automatic R-peak detection.",
+    "Next-RR features require the following beat: offline analysis, not immediate prediction.",
+    "Paced records included; mixed leads (102/104 use V5); not strict EC57 benchmarking.",
+    "Only two internal grouped validation splits; minority-class estimates remain uncertain."
+  ]
+}

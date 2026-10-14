@@ -1,0 +1,45 @@
+{
+  "run_scope": "Full MIT-BIH Arrhythmia Database; 48 records",
+  "usable_beats": 109468,
+  "train_beats": 85782,
+  "test_beats": 23686,
+  "test_record_ids": ["104", "113", "121", "201", "202", "203", "205", "207", "219", "222", "231"],
+  "test_patient_groups": 10,
+  "test_grouping_note": "Records 201 and 202 belong to the same subject and are kept in one split group.",
+  "lead_selection": "Prefer MLII, then II, otherwise the first available lead; records 102 and 104 used V5.",
+  "evaluation_note": "Single GroupShuffleSplit holdout with random_state=42. AAMI-inspired five-class mapping; paced records are included, so this is not a strict EC57 benchmark. Educational baseline, not for clinical use.",
+  "model": "StandardScaler + distance-weighted kNN (k=5), six basic signal statistics",
+  "labels": ["N", "S", "V", "F", "Q"],
+  "accuracy": 0.7636578569619185,
+  "macro_f1": 0.30426167808999655,
+  "weighted_f1": 0.7704122989276586,
+  "test_class_support": {
+    "N": 20073,
+    "S": 519,
+    "V": 1011,
+    "F": 16,
+    "Q": 2067
+  },
+  "class_metrics": {
+    "N": {"precision": 0.8795660036166365, "recall": 0.8481044188711204, "f1": 0.8635487470832911},
+    "S": {"precision": 0.02119700748129676, "recall": 0.03275529865125241, "f1": 0.025738077214231644},
+    "V": {"precision": 0.27242662257131045, "recall": 0.6518298714144412, "f1": 0.38425655976676387},
+    "F": {"precision": 0.0, "recall": 0.0, "f1": 0.0},
+    "Q": {"precision": 0.3643192488262911, "recall": 0.1877116594097726, "f1": 0.24776500638569604}
+  },
+  "specificity_one_vs_rest": {
+    "N": 0.35482978134514254,
+    "S": 0.9661155954590581,
+    "V": 0.9223814773980155,
+    "F": 0.9980988593155894,
+    "Q": 0.9686849530505574
+  },
+  "confusion_matrix_order": "Rows are actual classes; columns are predicted classes in labels order N, S, V, F, Q.",
+  "confusion_matrix": [
+    [17024, 750, 1639, 43, 617],
+    [367, 17, 109, 0, 26],
+    [318, 0, 659, 1, 33],
+    [14, 0, 1, 0, 1],
+    [1632, 35, 11, 1, 388]
+  ]
+}

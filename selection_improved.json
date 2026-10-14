@@ -1,0 +1,38 @@
+{
+  "selected": "shape_rr_knn7_cap5000",
+  "validation": [
+    {
+      "name": "original_6_features",
+      "scores": [
+        0.2944365272833147,
+        0.3238632957234738
+      ],
+      "mean_macro_f1": 0.3091499115033942
+    },
+    {
+      "name": "shape_rr_knn5",
+      "scores": [
+        0.44592958736409705,
+        0.45229805008417523
+      ],
+      "mean_macro_f1": 0.44911381872413614
+    },
+    {
+      "name": "shape_rr_knn5_cap2000",
+      "scores": [
+        0.4727187196658885,
+        0.49698491626216346
+      ],
+      "mean_macro_f1": 0.484851817964026
+    },
+    {
+      "name": "shape_rr_knn7_cap5000",
+      "scores": [
+        0.48435920459491566,
+        0.5097565895418629
+      ],
+      "mean_macro_f1": 0.49705789706838927
+    }
+  ],
+  "test_used_for_selection": false
+}
