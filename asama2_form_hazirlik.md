@@ -1,4 +1,6 @@
-# EEM4011 Aşama 2 formu: gerçek sinyal işleme sonuçları
+# EEM4011 Aşama 2 formu: güncel ana proje
+
+**16 Ekim 2026 düzeltmesi:** Hocanın güncellenmiş kişisel formu ana projeyi "hasta bazlı V atımı tespiti" olarak tanımlıyor. Bu dosyanın aşağıdaki eski R-tepesi sayıları artık **ana projenin sonuç alanlarına uygun değildir**. Güncel, doğrulanmış 43 kayıtlı V atımı başlangıç deneyi için [asama2_v_baseline.md](asama2_v_baseline.md) dosyasını kullanın. Ana metrik DS2 V-F1 = **0,702**; 48 kayıtlı R-tepesi F1 = 0,9805 bu metrik değildir.
 
 Bu not yalnız gerçekten çalıştırılan **makine öğrenmesiz R-tepe tespiti** deneyini kapsar. Form gönderilmedi. Formda görünen şıkları ve alanların birimlerini esas al.
 

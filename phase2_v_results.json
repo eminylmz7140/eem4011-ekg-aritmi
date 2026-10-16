@@ -1,0 +1,365 @@
+{
+  "dataset": "MIT-BIH Arrhythmia Database v1.0.0",
+  "groups": {
+    "DS1": [
+      "101",
+      "106",
+      "108",
+      "109",
+      "112",
+      "114",
+      "115",
+      "116",
+      "118",
+      "119",
+      "122",
+      "124",
+      "201",
+      "203",
+      "205",
+      "207",
+      "208",
+      "209",
+      "215",
+      "220",
+      "223",
+      "230"
+    ],
+    "DS2": [
+      "100",
+      "103",
+      "105",
+      "111",
+      "113",
+      "117",
+      "121",
+      "123",
+      "200",
+      "210",
+      "212",
+      "213",
+      "214",
+      "219",
+      "221",
+      "222",
+      "228",
+      "231",
+      "232",
+      "233",
+      "234"
+    ]
+  },
+  "record_count": 43,
+  "excluded_records": [
+    "102",
+    "104",
+    "107",
+    "202",
+    "217"
+  ],
+  "lead": "MLII",
+  "reference_r_locations": "PhysioNet .atr annotations; not an automatic R detector",
+  "eligible_beat_counts": {
+    "DS1": 50555,
+    "DS2": 47140
+  },
+  "positive_beat_counts": {
+    "DS1": 3788,
+    "DS2": 3200
+  },
+  "ds1_corr_median_non_v": 0.9929027043875512,
+  "ds1_corr_median_v": 0.6611391537563447,
+  "threshold_grid": [
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9,
+    0.95
+  ],
+  "selected_T_on_DS1": 0.9,
+  "DS1_selected": {
+    "TP": 3624,
+    "FP": 1729,
+    "FN": 164,
+    "Se": 0.9567053854276664,
+    "PPV": 0.677003549411545,
+    "F1": 0.7929110600590745
+  },
+  "DS2_baseline": {
+    "TP": 3027,
+    "FP": 2398,
+    "FN": 173,
+    "Se": 0.9459375,
+    "PPV": 0.5579723502304147,
+    "F1": 0.7019130434782609
+  },
+  "records": {
+    "101": {
+      "group": "DS1",
+      "lead": "MLII",
+      "eligible_beats": 1861,
+      "V_E": 0
+    },
+    "106": {
+      "group": "DS1",
+      "lead": "MLII",
+      "eligible_beats": 2025,
+      "V_E": 520
+    },
+    "108": {
+      "group": "DS1",
+      "lead": "MLII",
+      "eligible_beats": 1759,
+      "V_E": 17
+    },
+    "109": {
+      "group": "DS1",
+      "lead": "MLII",
+      "eligible_beats": 2528,
+      "V_E": 38
+    },
+    "112": {
+      "group": "DS1",
+      "lead": "MLII",
+      "eligible_beats": 2537,
+      "V_E": 0
+    },
+    "114": {
+      "group": "DS1",
+      "lead": "MLII",
+      "eligible_beats": 1873,
+      "V_E": 43
+    },
+    "115": {
+      "group": "DS1",
+      "lead": "MLII",
+      "eligible_beats": 1951,
+      "V_E": 0
+    },
+    "116": {
+      "group": "DS1",
+      "lead": "MLII",
+      "eligible_beats": 2410,
+      "V_E": 109
+    },
+    "118": {
+      "group": "DS1",
+      "lead": "MLII",
+      "eligible_beats": 2276,
+      "V_E": 16
+    },
+    "119": {
+      "group": "DS1",
+      "lead": "MLII",
+      "eligible_beats": 1985,
+      "V_E": 444
+    },
+    "122": {
+      "group": "DS1",
+      "lead": "MLII",
+      "eligible_beats": 2474,
+      "V_E": 0
+    },
+    "124": {
+      "group": "DS1",
+      "lead": "MLII",
+      "eligible_beats": 1612,
+      "V_E": 47
+    },
+    "201": {
+      "group": "DS1",
+      "lead": "MLII",
+      "eligible_beats": 1959,
+      "V_E": 198
+    },
+    "203": {
+      "group": "DS1",
+      "lead": "MLII",
+      "eligible_beats": 2973,
+      "V_E": 444
+    },
+    "205": {
+      "group": "DS1",
+      "lead": "MLII",
+      "eligible_beats": 2643,
+      "V_E": 71
+    },
+    "207": {
+      "group": "DS1",
+      "lead": "MLII",
+      "eligible_beats": 1858,
+      "V_E": 210
+    },
+    "208": {
+      "group": "DS1",
+      "lead": "MLII",
+      "eligible_beats": 2579,
+      "V_E": 992
+    },
+    "209": {
+      "group": "DS1",
+      "lead": "MLII",
+      "eligible_beats": 3003,
+      "V_E": 1
+    },
+    "215": {
+      "group": "DS1",
+      "lead": "MLII",
+      "eligible_beats": 3360,
+      "V_E": 164
+    },
+    "220": {
+      "group": "DS1",
+      "lead": "MLII",
+      "eligible_beats": 2046,
+      "V_E": 0
+    },
+    "223": {
+      "group": "DS1",
+      "lead": "MLII",
+      "eligible_beats": 2589,
+      "V_E": 473
+    },
+    "230": {
+      "group": "DS1",
+      "lead": "MLII",
+      "eligible_beats": 2254,
+      "V_E": 1
+    },
+    "100": {
+      "group": "DS2",
+      "lead": "MLII",
+      "eligible_beats": 2271,
+      "V_E": 1
+    },
+    "103": {
+      "group": "DS2",
+      "lead": "MLII",
+      "eligible_beats": 2082,
+      "V_E": 0
+    },
+    "105": {
+      "group": "DS2",
+      "lead": "MLII",
+      "eligible_beats": 2565,
+      "V_E": 41
+    },
+    "111": {
+      "group": "DS2",
+      "lead": "MLII",
+      "eligible_beats": 2122,
+      "V_E": 1
+    },
+    "113": {
+      "group": "DS2",
+      "lead": "MLII",
+      "eligible_beats": 1793,
+      "V_E": 0
+    },
+    "117": {
+      "group": "DS2",
+      "lead": "MLII",
+      "eligible_beats": 1533,
+      "V_E": 0
+    },
+    "121": {
+      "group": "DS2",
+      "lead": "MLII",
+      "eligible_beats": 1861,
+      "V_E": 1
+    },
+    "123": {
+      "group": "DS2",
+      "lead": "MLII",
+      "eligible_beats": 1516,
+      "V_E": 3
+    },
+    "200": {
+      "group": "DS2",
+      "lead": "MLII",
+      "eligible_beats": 2597,
+      "V_E": 825
+    },
+    "210": {
+      "group": "DS2",
+      "lead": "MLII",
+      "eligible_beats": 2638,
+      "V_E": 195
+    },
+    "212": {
+      "group": "DS2",
+      "lead": "MLII",
+      "eligible_beats": 2746,
+      "V_E": 0
+    },
+    "213": {
+      "group": "DS2",
+      "lead": "MLII",
+      "eligible_beats": 2887,
+      "V_E": 220
+    },
+    "214": {
+      "group": "DS2",
+      "lead": "MLII",
+      "eligible_beats": 2257,
+      "V_E": 256
+    },
+    "219": {
+      "group": "DS2",
+      "lead": "MLII",
+      "eligible_beats": 2151,
+      "V_E": 64
+    },
+    "221": {
+      "group": "DS2",
+      "lead": "MLII",
+      "eligible_beats": 2425,
+      "V_E": 396
+    },
+    "222": {
+      "group": "DS2",
+      "lead": "MLII",
+      "eligible_beats": 2481,
+      "V_E": 0
+    },
+    "228": {
+      "group": "DS2",
+      "lead": "MLII",
+      "eligible_beats": 2051,
+      "V_E": 362
+    },
+    "231": {
+      "group": "DS2",
+      "lead": "MLII",
+      "eligible_beats": 1569,
+      "V_E": 2
+    },
+    "232": {
+      "group": "DS2",
+      "lead": "MLII",
+      "eligible_beats": 1778,
+      "V_E": 0
+    },
+    "233": {
+      "group": "DS2",
+      "lead": "MLII",
+      "eligible_beats": 3066,
+      "V_E": 830
+    },
+    "234": {
+      "group": "DS2",
+      "lead": "MLII",
+      "eligible_beats": 2751,
+      "V_E": 3
+    }
+  }
+}
