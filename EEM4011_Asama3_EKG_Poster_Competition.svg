@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+<title id="title">Hasta bazlı EKG sınıflandırması: Baseline, kNN ve Random Forest</title>
+<desc id="desc">MIT-BIH DS1 eğitim ve DS2 test bölmesinde V/E atımlarını ayıran üç yöntemin karşılaştırması. Grafik verileri proje çıktı JSON'uyla eşleşir.</desc>
+<defs>
+ <linearGradient id="hero" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#092d3d"/><stop offset="1" stop-color="#115a61"/></linearGradient>
+ <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#d7f36a"/><stop offset="1" stop-color="#8fda75"/></linearGradient>
+ <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#173448" flood-opacity=".10"/></filter>
+ <style>text{font-family:Arial,sans-serif}.muted{fill:#627685}.navy{fill:#102f40}.tiny{font-size:13px}.cap{font-size:14px;font-weight:700;letter-spacing:1.5px}</style>
+</defs>
+<rect width="1600" height="1100" fill="#f2f4ef"/>
+<!-- New, asymmetrical competition layout -->
+<path d="M0 0H1600V292H0Z" fill="url(#hero)"/>
+<circle cx="1480" cy="45" r="270" fill="#fff" opacity=".035"/><circle cx="1325" cy="260" r="170" fill="#d7f36a" opacity=".045"/>
+<text x="64" y="58" fill="#d7f36a" class="cap">TEKNOFEST 2242  /  SAĞLIK  ·  EEM4011</text>
+<text x="64" y="128" fill="#fff" font-size="48" font-weight="700">Aynı EKG, farklı yöntemler.</text>
+<text x="64" y="184" fill="#fff" font-size="48" font-weight="700">Hangisi V/E atımlarını daha iyi ayırıyor?</text>
+<text x="67" y="226" fill="#c2d6d8" font-size="19">Hasta bazlı test: yöntemler daha önce görmedikleri kayıtlarda değerlendirildi.</text>
+<text x="67" y="267" fill="#a9c2c5" font-size="15">Yıldıray Yılmaz  ·  MIT-BIH Arrhythmia Database  ·  EEM4011 Biyomedikal Uygulamalarında Programlama ve Modelleme</text>
+<rect x="1220" y="48" width="316" height="202" rx="24" fill="#fff" opacity=".09" stroke="#d7f36a" stroke-opacity=".65"/>
+<text x="1252" y="88" fill="#d7f36a" class="cap">EN YÜKSEK F1 · RANDOM FOREST</text><text x="1250" y="168" fill="#fff" font-size="70" font-weight="700">0,870</text><text x="1253" y="207" fill="#c2d6d8" font-size="16">DS2 sabit test bölmesi</text>
+<!-- Study design left rail -->
+<rect x="54" y="324" width="418" height="600" rx="24" fill="#fff" filter="url(#shadow)"/>
+<text x="88" y="372" fill="#178278" class="cap">DENEYİN TASARIMI</text><text x="88" y="410" class="navy" font-size="27" font-weight="700">Hasta bazlı ayırma</text>
+<text x="88" y="448" fill="#627685" font-size="16">Bir hastanın kayıtları eğitim ve testte</text><text x="88" y="471" fill="#627685" font-size="16">karışmadı.</text>
+<rect x="88" y="502" width="350" height="108" rx="17" fill="#e7f3ef"/><rect x="88" y="502" width="9" height="108" rx="4" fill="#168b7e"/>
+<text x="116" y="539" fill="#168b7e" class="cap">EĞİTİM · DS1</text><text x="116" y="579" class="navy" font-size="28" font-weight="700">22 kayıt  /  50.555 atım</text>
+<path d="M263 625v42m0 0-9-12m9 12 9-12" stroke="#8ca49e" stroke-width="3" fill="none"/>
+<rect x="88" y="678" width="350" height="108" rx="17" fill="#eef1f7"/><rect x="88" y="678" width="9" height="108" rx="4" fill="#586f91"/>
+<text x="116" y="715" fill="#586f91" class="cap">TEST · DS2</text><text x="116" y="755" class="navy" font-size="28" font-weight="700">21 kayıt  /  47.140 atım</text>
+<text x="88" y="833" fill="#627685" font-size="15">Testte 3.200 pozitif V/E atım;</text><text x="88" y="856" fill="#627685" font-size="15">43.940 diğer atım bulunuyor.</text>
+<rect x="88" y="879" width="350" height="1" fill="#e2e8e5"/><text x="88" y="906" fill="#627685" font-size="13">Kaynak: MIT-BIH Arrhythmia Database v1.0.0</text>
+<!-- Dominant results area -->
+<text x="522" y="366" fill="#178278" class="cap">TEST SONUÇLARI</text><text x="522" y="405" class="navy" font-size="29" font-weight="700">Yüksek duyarlılık, tek başına yeterli değil</text>
+<text x="522" y="435" fill="#627685" font-size="15">Aynı DS2 test bölmesindeki F1, duyarlılık ve kesinlik (0–1)</text>
+<rect x="514" y="458" width="1022" height="302" rx="22" fill="#fff" filter="url(#shadow)"/>
+<g fill="#627685" font-size="13"><text x="829" y="493">0</text><text x="990" y="493">0,25</text><text x="1150" y="493">0,50</text><text x="1310" y="493">0,75</text><text x="1470" y="493">1,00</text></g>
+<g stroke="#e8ece9" stroke-width="1"><path d="M834 505V725"/><path d="M994 505V725"/><path d="M1154 505V725"/><path d="M1314 505V725"/><path d="M1474 505V725"/></g>
+<g class="navy" font-size="17" font-weight="700"><text x="546" y="550">Şablon baseline</text><text x="546" y="622">kNN</text><text x="546" y="694">Random Forest</text></g>
+<!-- Bars scaled 640 px / unit -->
+<g><rect x="834" y="526" width="449.3" height="13" rx="6" fill="#56728a"/><rect x="834" y="545" width="605.4" height="13" rx="6" fill="#168b7e"/><rect x="834" y="564" width="357.1" height="13" rx="6" fill="#e6a345"/>
+<rect x="834" y="598" width="335.9" height="13" rx="6" fill="#56728a"/><rect x="834" y="617" width="581.4" height="13" rx="6" fill="#168b7e"/><rect x="834" y="636" width="236.1" height="13" rx="6" fill="#e6a345"/>
+<rect x="834" y="670" width="556.7" height="13" rx="6" fill="#56728a"/><rect x="834" y="689" width="597.6" height="13" rx="6" fill="#168b7e"/><rect x="834" y="708" width="521.0" height="13" rx="6" fill="#e6a345"/></g>
+<g class="navy" font-size="12" font-weight="700"><text x="1288" y="538">0,702</text><text x="1444" y="557">0,946</text><text x="1197" y="576">0,558</text><text x="1176" y="610">0,525</text><text x="1420" y="629">0,908</text><text x="1077" y="648">0,369</text><text x="1398" y="682">0,870</text><text x="1439" y="701">0,934</text><text x="1363" y="720">0,814</text></g>
+<g font-size="13" fill="#526a76"><circle cx="830" cy="788" r="6" fill="#56728a"/><text x="843" y="793">F1</text><circle cx="900" cy="788" r="6" fill="#168b7e"/><text x="913" y="793">Duyarlılık</text><circle cx="1015" cy="788" r="6" fill="#e6a345"/><text x="1028" y="793">Kesinlik</text></g>
+<!-- Error chart: different visual encoding -->
+<text x="522" y="844" fill="#178278" class="cap">HATA DENGESİ</text><text x="522" y="879" class="navy" font-size="24" font-weight="700">Yanlış alarm (FP) ve kaçırılan V/E (FN)</text>
+<rect x="514" y="898" width="1022" height="137" rx="20" fill="#fff" filter="url(#shadow)"/>
+<g fill="#526a76" font-size="14"><text x="546" y="931" font-weight="700">YÖNTEM</text><text x="835" y="931" font-weight="700">FP · yanlış alarm</text><text x="1196" y="931" font-weight="700">FN · kaçırılan V/E</text><text x="546" y="965">Şablon baseline</text><text x="546" y="996">kNN</text><text x="546" y="1027">Random Forest</text></g>
+<g><rect x="835" y="951" width="270" height="9" rx="4" fill="#f0f2ef"/><rect x="835" y="951" width="130.2" height="9" rx="4" fill="#e6a345"/><rect x="835" y="982" width="270" height="9" rx="4" fill="#f0f2ef"/><rect x="835" y="982" width="270" height="9" rx="4" fill="#e6a345"/><rect x="835" y="1013" width="270" height="9" rx="4" fill="#f0f2ef"/><rect x="835" y="1013" width="37" height="9" rx="4" fill="#e6a345"/>
+<rect x="1196" y="951" width="220" height="9" rx="4" fill="#f0f2ef"/><rect x="1196" y="951" width="145.5" height="9" rx="4" fill="#56728a"/><rect x="1196" y="982" width="220" height="9" rx="4" fill="#f0f2ef"/><rect x="1196" y="982" width="220" height="9" rx="4" fill="#56728a"/><rect x="1196" y="1013" width="220" height="9" rx="4" fill="#f0f2ef"/><rect x="1196" y="1013" width="159.4" height="9" rx="4" fill="#56728a"/></g>
+<g class="navy" font-size="12" font-weight="700"><text x="1114" y="960">2.398</text><text x="1114" y="991">4.972</text><text x="880" y="1022">682</text><text x="1348" y="960">173</text><text x="1423" y="991">293</text><text x="1362" y="1022">212</text></g>
+<!-- Conclusion and limitations footer -->
+<path d="M0 1055H1600V1100H0Z" fill="#092d3d"/><text x="64" y="1082" fill="#d7f36a" font-size="15" font-weight="700">BU DENEYDE: Random Forest en yüksek F1 ve kesinliği verdi; baseline duyarlılıkta az farkla önde.</text>
+<text x="64" y="1061" fill="#637683" font-size="12">Sınırlılık: .atr uzman atımları kullanıldı; sonraki RR geleceği içerir; tek DS1/DS2 bölmesi ve klinik doğrulama yok. RF 300 ağaç · kNN k=5, DS1'den 5.000 atım.</text>
+</svg>
