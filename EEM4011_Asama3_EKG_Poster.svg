@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+  <title id="title">EKG'de V/E atımı sınıflandırması — EEM4011 proje posteri</title>
+  <desc id="desc">MIT-BIH verisinde hasta bazlı DS1/DS2 ayrımıyla şablon baseline, kNN ve Random Forest karşılaştırması. Tek sabit test bölümünde V/E F1 sırasıyla 0.702, 0.525 ve 0.870.</desc>
+  <rect width="1600" height="1100" fill="#F3F6FA"/>
+  <rect x="35" y="28" width="1530" height="158" rx="22" fill="#142A43"/>
+  <text x="75" y="68" fill="#9AE3DC" font-family="Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="1">EEM4011  |  BİYOMEDİKAL UYGULAMALARINDA PROGRAMLAMA VE MODELLEME</text>
+  <text x="75" y="119" fill="#FFFFFF" font-family="Arial,sans-serif" font-size="42" font-weight="700">EKG’de V/E Atımı Sınıflandırması</text>
+  <text x="75" y="158" fill="#D5DFEA" font-family="Arial,sans-serif" font-size="20">MIT-BIH’de hasta bazlı eğitim/test ayrımında sinyal kuralı ve makine öğrenmesi karşılaştırması</text>
+  <text x="1515" y="70" text-anchor="end" fill="#FFFFFF" font-family="Arial,sans-serif" font-size="18" font-weight="700">PROJE POSTERİ</text>
+  <text x="1515" y="105" text-anchor="end" fill="#D5DFEA" font-family="Arial,sans-serif" font-size="17">29 Ekim 2026</text>
+
+  <!-- Column panels -->
+  <g fill="#FFFFFF" stroke="#DDE5EF" stroke-width="2">
+    <rect x="40" y="215" width="475" height="250" rx="18"/><rect x="40" y="485" width="475" height="300" rx="18"/><rect x="40" y="805" width="475" height="235" rx="18"/>
+    <rect x="560" y="215" width="475" height="330" rx="18"/><rect x="560" y="565" width="475" height="475" rx="18"/>
+    <rect x="1080" y="215" width="480" height="340" rx="18"/><rect x="1080" y="575" width="480" height="270" rx="18"/><rect x="1080" y="865" width="480" height="175" rx="18"/>
+  </g>
+  <g stroke-width="7" stroke-linecap="round">
+    <path d="M60 245V435" stroke="#16A6A1"/><path d="M60 515V755" stroke="#3976B8"/><path d="M60 835V1015" stroke="#E5A23B"/>
+    <path d="M580 245V515" stroke="#3976B8"/><path d="M580 595V1010" stroke="#16A6A1"/>
+    <path d="M1100 245V525" stroke="#E5A23B"/><path d="M1100 605V815" stroke="#D56A5B"/><path d="M1100 895V1010" stroke="#68778A"/>
+  </g>
+  <g font-family="Arial,sans-serif" fill="#142A43" font-size="24" font-weight="700">
+    <text x="83" y="256">Problem ve amaç</text><text x="83" y="526">Veri ve deney düzeni</text><text x="83" y="846">İş akışı</text>
+    <text x="603" y="256">Yöntemler</text><text x="603" y="606">Ana sonuç: F1 (V/E)</text>
+    <text x="1123" y="256">Ölçülen sonuçlar</text><text x="1123" y="616">Hata sayıları</text><text x="1123" y="906">Sınırlamalar</text>
+  </g>
+  <g font-family="Arial,sans-serif" fill="#33465C" font-size="18">
+    <!-- Left column -->
+    <text x="83" y="300">Ventriküler ektopik (V) ve escape (E)</text><text x="83" y="328">atımlarını diğer etiketlerden ayırmada</text><text x="83" y="356">hangi yaklaşım daha iyi sonuç veriyor?</text>
+    <text x="83" y="402">Amaç: yöntemleri aynı DS2 test kayıtlarında,</text><text x="83" y="430">aynı V/E pozitif sınıf tanımıyla karşılaştırmak.</text>
+    <text x="83" y="572" font-weight="700">MIT-BIH Arrhythmia Database v1.0.0</text>
+    <text x="83" y="611">Eğitim DS1: 22 kayıt · 50.555 atım</text><text x="83" y="647">Test DS2: 21 ayrı kayıt · 47.140 atım</text>
+    <text x="83" y="683">Testte pozitif: 3.200 V/E atımı</text>
+    <text x="83" y="731">201 ve 202 aynı kişiye ait olduğundan 202;</text><text x="83" y="759">pacing kayıtları ana deneyden çıkarıldı.</text>
+    <text x="83" y="887">MIT-BIH sinyali + .atr uzman anotasyonları</text>
+    <text x="83" y="923">↓  DS1’de eğitim / baseline eşiği seçimi</text><text x="83" y="959">↓  DS2’de sabit test</text>
+    <text x="83" y="995">↓  V/E için F1, duyarlılık, kesinlik ve hata sayıları</text>
+    <!-- Middle column methods -->
+    <text x="603" y="302" font-weight="700">Şablon baseline</text><text x="603" y="332">EKG atım şablonu + korelasyon eşiği T=0,90.</text>
+    <text x="603" y="374" font-weight="700">kNN</text><text x="603" y="404">k=5, mesafe ağırlıklı; DS1’den sınıf başına</text><text x="603" y="432">en çok 2.500 atım (toplam 5.000).</text>
+    <text x="603" y="474" font-weight="700">Random Forest</text><text x="603" y="504">300 ağaç; balanced_subsample sınıf ağırlığı.</text>
+    <text x="603" y="530" font-size="16">Özellikler: 90 örneklik pencereden 18 örnek + önceki/sonraki RR.</text>
+    <!-- Middle F1 chart grid and bars -->
+    <g stroke="#E5EBF1" stroke-width="2"><path d="M630 940H1000"/><path d="M630 850H1000"/><path d="M630 760H1000"/><path d="M630 670H1000"/></g>
+    <g font-size="15" fill="#68778A"><text x="600" y="945">0</text><text x="590" y="855">0,25</text><text x="590" y="765">0,50</text><text x="590" y="675">0,75</text><text x="590" y="645">1,00</text></g>
+    <path d="M640 940V640" stroke="#9AA9B8" stroke-width="2"/>
+    <rect x="680" y="687" width="72" height="253" rx="7" fill="#547792"/><rect x="795" y="751" width="72" height="189" rx="7" fill="#E5A23B"/><rect x="910" y="627" width="72" height="313" rx="7" fill="#168A83"/>
+    <g fill="#142A43" font-size="20" font-weight="700"><text x="716" y="675" text-anchor="middle">0,702</text><text x="831" y="739" text-anchor="middle">0,525</text><text x="946" y="615" text-anchor="middle">0,870</text></g>
+    <g fill="#33465C" font-size="16"><text x="716" y="972" text-anchor="middle">Baseline</text><text x="831" y="972" text-anchor="middle">kNN</text><text x="946" y="972" text-anchor="middle">Random</text><text x="946" y="995" text-anchor="middle">Forest</text></g>
+    <text x="603" y="1021" font-size="15" fill="#68778A">Tek hasta-bazlı bölme; bağımsız dış doğrulama yok.</text>
+    <!-- Right metrics table -->
+    <g font-size="16" font-family="Arial,sans-serif">
+      <text x="1123" y="302" font-weight="700">Yöntem</text><text x="1300" y="302" font-weight="700">F1</text><text x="1375" y="302" font-weight="700">Duy.</text><text x="1460" y="302" font-weight="700">Kes.</text>
+      <path d="M1123 313H1518" stroke="#DDE5EF" stroke-width="2"/>
+      <text x="1123" y="349">Şablon baseline</text><text x="1300" y="349">0,702</text><text x="1375" y="349">0,946</text><text x="1460" y="349">0,558</text>
+      <text x="1123" y="393">kNN</text><text x="1300" y="393">0,525</text><text x="1375" y="393">0,908</text><text x="1460" y="393">0,369</text>
+      <text x="1123" y="437">Random Forest</text><text x="1300" y="437">0,870</text><text x="1375" y="437">0,934</text><text x="1460" y="437">0,814</text>
+    </g>
+    <text x="1123" y="493" font-size="16">Duy.=duyarlılık · Kes.=kesinlik · F1 V/E pozitif sınıfı.</text>
+    <!-- FP FN bars -->
+    <g stroke="#E5EBF1" stroke-width="2"><path d="M1140 805H1515"/><path d="M1140 745H1515"/><path d="M1140 685H1515"/></g>
+    <rect x="1170" y="697" width="42" height="108" fill="#D56A5B"/><rect x="1216" y="797" width="30" height="8" fill="#3976B8"/>
+    <rect x="1290" y="581" width="42" height="224" fill="#D56A5B"/><rect x="1336" y="792" width="30" height="13" fill="#3976B8"/>
+    <rect x="1410" y="774" width="42" height="31" fill="#D56A5B"/><rect x="1456" y="795" width="30" height="10" fill="#3976B8"/>
+    <g font-size="14" fill="#33465C"><text x="1191" y="691" text-anchor="middle">2398</text><text x="1231" y="785" text-anchor="middle">173</text><text x="1311" y="575" text-anchor="middle">4972</text><text x="1351" y="780" text-anchor="middle">293</text><text x="1431" y="768" text-anchor="middle">682</text><text x="1471" y="784" text-anchor="middle">212</text></g>
+    <g font-size="15"><text x="1205" y="829" text-anchor="middle">Baseline</text><text x="1325" y="829" text-anchor="middle">kNN</text><text x="1445" y="829" text-anchor="middle">RF</text></g>
+    <!-- limitations -->
+    <text x="1123" y="946">Tek sabit DS1/DS2 bölmesi; dış klinik</text><text x="1123" y="972">doğrulama yok. R konumları uzman .atr</text><text x="1123" y="998">anotasyonlarından alındı. Sonraki RR geleceği</text><text x="1123" y="1024">gerektirir; gerçek zamanlı ya da tanı aracı değildir.</text>
+  </g>
+  <g font-family="Arial,sans-serif" font-size="15" fill="#53667B">
+    <text x="42" y="1075">Kaynak veri: MIT-BIH Arrhythmia Database v1.0.0 · PhysioNet: https://physionet.org/content/mitdb/1.0.0/</text>
+    <text x="1558" y="1075" text-anchor="end">Kod ve proje: github.com/eminylmz7140/eem4011-ekg-aritmi</text>
+  </g>
+</svg>
